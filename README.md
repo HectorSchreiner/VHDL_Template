@@ -18,3 +18,13 @@ To view the waveform use the command:
 ```bash
 ghdl -r Hello_TB --wave=hello_tb.ghw
 ```
+
+# Script
+
+I have also crated a script for compiling everything, the script runs the above commands.
+
+Usage:
+```
+./simulate.sh <filename.vhdl> <entity_name> [--wave]
+```
+`--wave` is an optional parameter.
