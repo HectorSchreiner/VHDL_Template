@@ -1,4 +1,0 @@
-v 4
-file . "example/Hello_TB.vhd" "3e52dfb3631cf5cd1822207b2b062880124410e4" "20250611122130.697":
-  entity hello_tb at 1( 0) + 0 on 11;
-  architecture rtl of hello_tb at 7( 76) + 0 on 12;
