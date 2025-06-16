@@ -1,8 +1,8 @@
 {
-  description = "Flake for VHDL development with GHDL";
+  description = "VHDL development with GHDL";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05"; # or replace with your preferred version
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -17,12 +17,11 @@
           name = "vhdl-dev-shell";
           buildInputs = with pkgs; [
             ghdl
-            gtkwave # for waveform viewing
-            yosys   # optional, for synthesis
+            gtkwave 
+            yosys   # optional
           ];
 
           shellHook = ''
-            echo "Welcome to the VHDL development environment!"
             echo "GHDL version: $(ghdl --version)"
           '';
         };
